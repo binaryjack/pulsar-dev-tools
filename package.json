@@ -1,0 +1,48 @@
+{
+  "name": "@pulsar-framework/dev-tools",
+  "version": "0.1.0",
+  "description": "Dev tools for the Pulsar framework — browser overlay, signal debugger, tracer emitter",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./client": {
+      "import": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "pulsar",
+    "devtools",
+    "debug",
+    "signals",
+    "tracer"
+  ],
+  "author": "Tadeo Piana",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/binaryjack/pulsar-dev-tools.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vitest": "^4.0.18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
