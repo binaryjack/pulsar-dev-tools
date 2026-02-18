@@ -77,4 +77,5 @@ export function createEventId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
-export { TRACE_URL, TRACE_PORT };
+export { TRACE_PORT, TRACE_URL };
+
