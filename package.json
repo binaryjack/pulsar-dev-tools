@@ -36,9 +36,9 @@
     "url": "https://github.com/binaryjack/pulsar-dev-tools.git"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^20.19.30",
     "rimraf": "^5.0.5",
-    "typescript": "^5.3.3",
+    "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   },
   "publishConfig": {
